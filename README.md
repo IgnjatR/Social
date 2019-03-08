@@ -1,6 +1,6 @@
 # REST API based social network
 
-REST API based social network, with automated bot that demonstrate usage of API
+REST API based social network, with automated bot that demonstrates usage of API
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements.txt.
