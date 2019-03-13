@@ -123,7 +123,7 @@ class Command(BaseCommand):
             current_user = self.get_user_with_max_posts()
             posts_that_can_be_liked = self.get_available_posts(current_user)
 
-            # all users are reached max likes limit, or there are no posts with 0 likes
+            # all users have reached max likes limit, or there are no posts with 0 likes
             if current_user is None or len(posts_that_can_be_liked) == 0:
                 break
             self.start_to_like(session, current_user, posts_that_can_be_liked)
