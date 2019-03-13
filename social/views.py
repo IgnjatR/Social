@@ -94,7 +94,7 @@ class PostViewSet(viewsets.ModelViewSet):
             like = Like.objects.get(related_post=post, related_user=user)
             like.delete()
             serializer = LikeSerializer(like, context={'request': request})
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.data, status=status.HTTP_200_OK)
 
         return Response({'error': 'You did not liked this post, you can not unlike it'},
                         status=status.HTTP_405_METHOD_NOT_ALLOWED)
